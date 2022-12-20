@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>odd even array push</title>
+</head>
+<body>
+	<script>
+		let arr=[12,78,35,97,67,16,26,49,56,68,88,26,11,27,59,74,92,10,23];
+			let odd=[];
+			let even=[];
+			a=0;
+			b=0;
+			for(i=0;i<arr.length;i++){
+				if(arr[i]%2==0){
+					even[a]=arr[i];
+					a++;
+				}
+				else if(arr[i]%2==1){
+					odd[b]=arr[i];
+					b++;
+				}
+			}
+			document.write(even);
+			document.write("<br>");
+			document.write(odd);
+	</script>
+</body>
+</html>
