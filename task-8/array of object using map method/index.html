@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>array of object using map method</title>
+  </head>
+<body>
+	<script>
+		let detail=[
+			{
+				name:"mani",
+				age:21,
+				professional:"id"
+			},
+			{
+				name:"vasanth",
+				age:21,
+				professional:"id"
+			},
+			{
+				name:"gopi",
+				age:22,
+				professional:"id"
+			},
+			{
+				name:"rupu",
+				age:22,
+				professional:"id"
+			},
+			{
+				name:"ganesh",
+				age:22,
+				professional:"id"
+			},
+		]
+		
+		for(let names in detail){
+			console.log(detail[names]);
+		}
+		
+		let result = detail.map(person)
+			function person(fil){
+				return fil.name;
+			}
+		console.log(result);
+				
+	</script>
+</body>
+</html>
